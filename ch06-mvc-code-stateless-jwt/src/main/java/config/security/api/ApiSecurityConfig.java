@@ -53,7 +53,7 @@ public class ApiSecurityConfig extends WebSecurityConfigurerAdapter {
         auth.inMemoryAuthentication()
                 .withUser("user").password(passwordEncoder().encode("123")).authorities("xxx");
     }
-
+//
 
     @Bean
     public PasswordEncoder passwordEncoder(){
