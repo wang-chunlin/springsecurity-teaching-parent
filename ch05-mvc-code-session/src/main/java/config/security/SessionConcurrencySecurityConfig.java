@@ -16,7 +16,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  */
 @Configuration
 @EnableWebSecurity
-public class SessionFixationSecurityConfig extends WebSecurityConfigurerAdapter {
+public class SessionConcurrencySecurityConfig extends WebSecurityConfigurerAdapter {
 
 
     @Override
@@ -38,7 +38,8 @@ public class SessionFixationSecurityConfig extends WebSecurityConfigurerAdapter 
     protected void configure(HttpSecurity http) throws Exception {
         // @formatter:off
         http.sessionManagement()
-                .sessionFixation().migrateSession()
+               .maximumSessions(1)
+                .and()
             .and()
                 .formLogin()
             .and()

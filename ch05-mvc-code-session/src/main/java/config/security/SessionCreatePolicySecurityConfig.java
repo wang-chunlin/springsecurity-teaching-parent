@@ -6,6 +6,7 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
@@ -16,7 +17,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  */
 @Configuration
 @EnableWebSecurity
-public class SessionFixationSecurityConfig extends WebSecurityConfigurerAdapter {
+public class SessionCreatePolicySecurityConfig extends WebSecurityConfigurerAdapter {
 
 
     @Override
@@ -38,7 +39,7 @@ public class SessionFixationSecurityConfig extends WebSecurityConfigurerAdapter 
     protected void configure(HttpSecurity http) throws Exception {
         // @formatter:off
         http.sessionManagement()
-                .sessionFixation().migrateSession()
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
             .and()
                 .formLogin()
             .and()

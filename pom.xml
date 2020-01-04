@@ -14,6 +14,7 @@
         <module>ch03-mvc-code-login-logout-userdetailservice</module>
         <module>ch04-mvc-code-authentication-chain-ajax</module>
         <module>ch05-mvc-code-session</module>
+        <module>ch06-mvc-code-stateless-jwt</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -43,6 +44,7 @@
         <lombok.version>1.18.10</lombok.version>
         <swagger.version>2.9.2</swagger.version>
         <spring.security.version>5.0.12.RELEASE</spring.security.version>
+        <jwt.version>0.9.1</jwt.version>
     </properties>
 
     <dependencyManagement>
@@ -57,14 +59,14 @@
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
-                <scope>test</scope>
+                <scope>com.test</scope>
             </dependency>
 
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>spring-test</artifactId>
+                <artifactId>spring-com.test</artifactId>
                 <version>${spring.version}</version>
-                <scope>test</scope>
+                <scope>com.test</scope>
             </dependency>
             <dependency>
                 <groupId>org.aspectj</groupId>
@@ -206,7 +208,11 @@
                 <version>${spring.security.version}</version>
             </dependency>
 
-
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jwt.version}</version>
+            </dependency>
         </dependencies>
 
     </dependencyManagement>

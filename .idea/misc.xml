@@ -7,6 +7,7 @@
     <file type="web" url="file://$PROJECT_DIR$/ch03-mvc-code-login-logout-userdetailservice" />
     <file type="web" url="file://$PROJECT_DIR$/ch04-mvc-code-authentication-chain-ajax" />
     <file type="web" url="file://$PROJECT_DIR$/ch05-mvc-code-session" />
+    <file type="web" url="file://$PROJECT_DIR$/ch06-mvc-code-stateless-jwt" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

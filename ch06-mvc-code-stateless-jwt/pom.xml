@@ -9,7 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ch05-mvc-code-session</artifactId>
+    <artifactId>ch06-mvc-code-stateless-jwt</artifactId>
+
     <packaging>war</packaging>
 
     <dependencies>
@@ -60,6 +61,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>

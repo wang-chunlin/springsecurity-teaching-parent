@@ -9,42 +9,38 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-
 /**
  * @author cj
  * @date 2019/12/27
  */
 @Configuration
 @EnableWebSecurity
-public class SessionFixationSecurityConfig extends WebSecurityConfigurerAdapter {
+public class SecurityAuthenticationFlowConfig extends WebSecurityConfigurerAdapter {
+
 
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        //@formatter:off
         auth.inMemoryAuthentication()
                 .withUser("user")
-                    .password(passwordEncoder().encode("123"))
-                    .authorities("ROLE_USER");
-        //@formatter:on
+                .password(passwordEncoder().encode("123"))
+                .authorities("xxx");
     }
 
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        // @formatter:off
-        http.sessionManagement()
-                .sessionFixation().migrateSession()
-            .and()
-                .formLogin()
-            .and()
-            .authorizeRequests()
-                .antMatchers("/admin").authenticated()
-                .antMatchers("/").permitAll();
-        // @formatter:on
+        http.formLogin()
+                .and()
+                .authorizeRequests()
+                    .antMatchers("/").permitAll()
+                    .antMatchers("/admin").authenticated();
+
+      //  http.addFilterBefore(new MyFilter(), UsernamePasswordAuthenticationFilter.class);
+    }
+
+    @Bean
+    public PasswordEncoder passwordEncoder(){
+        return new BCryptPasswordEncoder();
     }
 }

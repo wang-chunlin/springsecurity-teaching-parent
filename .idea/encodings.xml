@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch01-web-xml-helloworld" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch01-web-xml-helloworld/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch01-web-xml-helloworld/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch02-mvc-code-helloworld" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch02-mvc-code-helloworld/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch02-mvc-code-helloworld/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch03-mvc-code-login-logout-userdetailservice" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch03-mvc-code-login-logout-userdetailservice/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch03-mvc-code-login-logout-userdetailservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch04-mvc-code-authentication-chain-ajax" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch04-mvc-code-authentication-chain-ajax/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch04-mvc-code-authentication-chain-ajax/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch05-mvc-code-session" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch05-mvc-code-session/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch05-mvc-code-session/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch06-mvc-code-stateless-jwt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch06-mvc-code-stateless-jwt/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch06-mvc-code-stateless-jwt/src/main/resources" charset="UTF-8" />
   </component>
 </project>
