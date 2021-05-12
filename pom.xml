@@ -43,7 +43,7 @@
         <commons.fileupload.version>1.4</commons.fileupload.version>
         <lombok.version>1.18.10</lombok.version>
         <swagger.version>2.9.2</swagger.version>
-        <spring.security.version>5.0.12.RELEASE</spring.security.version>
+        <spring.security.version>5.2.10.RELEASE</spring.security.version>
         <jwt.version>0.9.1</jwt.version>
     </properties>
 
